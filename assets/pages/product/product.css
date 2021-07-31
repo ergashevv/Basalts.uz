@@ -1,0 +1,232 @@
+.us-product {
+  margin-top: 100px;
+  padding: 120px 0;
+}
+
+.us-product h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+  color: #272727;
+}
+
+.us-product p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #4D4D4D;
+  width: 670px;
+}
+
+.product-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.product-section .product-section-left .second {
+  background-image: url(../../images/geo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-section .product-section-left .first {
+  background-image: url(../../images/armatur.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-section .product-section-left .product-section-block {
+  width: 693px;
+  border-radius: 4px;
+  height: 210px;
+  margin-bottom: 24px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  position: relative;
+}
+
+.product-section .product-section-left .product-section-block p {
+  padding: 150px 0 0 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  width: 350px;
+  color: #272727;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0.7;
+}
+
+.product-section .product-section-left .product-section-block:hover {
+  background-color: #FBD20F;
+}
+
+.product-section .product-section-left .product-section-block:hover p {
+  color: black;
+  opacity: 1;
+}
+
+.product-section .product-section-left .product-section-block:hover::before {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  background-color: transparent;
+}
+
+.product-section .product-section-left .product-section-block::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  background: #d9d9d999;
+  border-radius: 4px;
+}
+
+.product-section .product-section-right .thirt {
+  background-image: url(../../images/fibra.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-section .product-section-right .fourth {
+  background-image: url(../../images/geotestkatrue.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-section .product-section-right .product-section-block {
+  width: 693px;
+  border-radius: 4px;
+  height: 210px;
+  margin-bottom: 24px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  position: relative;
+}
+
+.product-section .product-section-right .product-section-block p {
+  padding: 150px 0 0 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  width: 350px;
+  color: #272727;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0.7;
+}
+
+.product-section .product-section-right .product-section-block:hover {
+  background-color: #FBD20F;
+}
+
+.product-section .product-section-right .product-section-block:hover p {
+  color: black;
+  opacity: 1;
+}
+
+.product-section .product-section-right .product-section-block:hover::before {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  background-color: transparent;
+}
+
+.product-section .product-section-right .product-section-block::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  background: #d9d9d999;
+  border-radius: 4px;
+}
+
+.product-section img {
+  width: 100%;
+}
+
+.catalog {
+  background-color: #FBD20F;
+  border-radius: 4px;
+}
+
+.catalog .cotalog-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.catalog .cotalog-section .cotalog-section-left {
+  width: 40%;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.catalog .cotalog-section .cotalog-section-left h3 {
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 36px;
+  font-size: 36px;
+  line-height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+
+.catalog .cotalog-section .cotalog-section-left button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FAFAFA;
+  padding: 20px 38px;
+  background: #272727;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+}
+
+.cotalog-section-right {
+  width: 60%;
+}
+
+.cotalog-section-right img {
+  height: 100%;
+  width: 730px;
+}
+/*# sourceMappingURL=product.css.map */

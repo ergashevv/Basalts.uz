@@ -1,0 +1,147 @@
+.sertf {
+  margin-bottom: 100px;
+}
+
+.sertf .serf-top {
+  margin-top: 100px;
+  padding: 120px 0 80px 0;
+}
+
+.sertf .serf-top h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
+  color: #272727;
+}
+
+.sertf .accordion-wrapper .accordion-block {
+  margin-top: 80px;
+}
+
+.sertf .accordion-wrapper .accordion-block .block-title .accordion-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #4D4D4D;
+  padding-left: 24px;
+}
+
+.sertf .accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 24px;
+}
+
+.sertf .accordion #alone-accor {
+  margin-bottom: 0 !important;
+}
+
+.sertf .accordion .accordion-side {
+  width: 49%;
+}
+
+.sertf .accordion .accordion-item {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.sertf .accordion input[name='panel'] {
+  display: none;
+}
+
+.sertf .accordion label {
+  position: relative;
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
+  padding: 24px;
+  color: #4D4D4D;
+  cursor: pointer;
+  -webkit-transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+  transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+  background: #D9D9D9;
+  border-radius: 4px;
+}
+
+.sertf .accordion label::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-image: url("../../images/document.svg");
+  right: 24px;
+  background-repeat: no-repeat;
+}
+
+.sertf .accordion input:checked + label {
+  background-color: #ff0;
+}
+
+.sertf .accordion input:checked + label:after {
+  line-height: .8em;
+}
+
+.sertf .accordion .accordion__content {
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  padding: 0 1.5em;
+  -webkit-box-shadow: inset 4px 0 0 0 #1abc9c, inset 0 3px 6px rgba(0, 0, 0, 0.75);
+          box-shadow: inset 4px 0 0 0 #1abc9c, inset 0 3px 6px rgba(0, 0, 0, 0.75);
+  background: #444;
+  background: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#222222));
+  background: linear-gradient(to bottom, #444444 0%, #222222 100%);
+  color: #eee;
+  -webkit-transition: height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+  transition: height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+}
+
+.sertf .accordion .accordion__content:not(:last-of-type) {
+  -webkit-box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.25), inset 4px 0 0 0 #1abc9c, inset 0 3px 6px rgba(0, 0, 0, 0.75);
+          box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.25), inset 4px 0 0 0 #1abc9c, inset 0 3px 6px rgba(0, 0, 0, 0.75);
+}
+
+.sertf .accordion .accordion__content .accordion__header {
+  padding: 1em 0;
+}
+
+.sertf .accordion .accordion__content .accordion__body {
+  font-size: .825em;
+  line-height: 1.4em;
+}
+
+.sertf input[name='panel']:checked ~ .accordion__content.accordion__content--small {
+  height: 150px;
+}
+
+.sertf input[name='panel']:checked ~ .accordion__content.accordion__content--med {
+  height: 200px;
+}
+
+.sertf input[name='panel']:checked ~ .accordion__content.accordion__content--large {
+  height: 300px;
+}
+/*# sourceMappingURL=sertificates.css.map */

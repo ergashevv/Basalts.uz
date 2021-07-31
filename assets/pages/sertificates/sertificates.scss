@@ -1,0 +1,142 @@
+
+
+.sertf {
+
+    .serf-top {
+        margin-top: 100px;
+
+        padding: 120px 0 80px 0;
+
+        h1 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 56px;
+            line-height: 68px;
+            display: flex;
+            align-items: center;
+            font-feature-settings: 'pnum'on, 'lnum'on;
+            color: #272727;
+        }
+    }
+    margin-bottom: 100px;
+    $light-grey: #eee;
+    $med-grey: #666;
+    $dark-grey: #444;
+    $highlight-color: #1abc9c;
+    $timing: .4s;
+    $ease: cubic-bezier(0.865, 0.140, 0.095, 0.870);
+    
+    
+    
+    .accordion-wrapper{
+        .accordion-block{
+            margin-top: 80px;
+            .block-title{
+                .accordion-name{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #4D4D4D;
+                    padding-left: 24px;
+                }
+            }
+        }
+    }
+    
+    .accordion {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 24px;
+         #alone-accor {
+             margin-bottom: 0 !important;
+         }
+        .accordion-side{
+            width: 49%;
+    
+           
+        }
+        .accordion-item{
+            width: 100%;
+            margin-bottom: 24px;
+        }
+    
+        input[name='panel'] {
+            display: none;
+        }
+        label {
+            position: relative;
+            display: block;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            font-feature-settings: 'pnum'on,
+            'lnum'on;
+            padding: 24px;
+            color: #4D4D4D;
+            cursor: pointer;
+            transition: all $timing $ease;
+            background: #D9D9D9;
+            border-radius: 4px;
+    
+    
+            &::before{
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+                background-image: url('../../images/document.svg');
+                right: 24px;
+                background-repeat: no-repeat;
+            }
+        }
+        input:checked+label {
+            background-color: #ff0;
+    
+            &:after {
+                line-height: .8em;
+            }
+    
+        }
+        .accordion__content {
+            overflow: hidden;
+            height: 0px;
+            position: relative;
+            padding: 0 1.5em;
+            box-shadow: inset 4px 0 0 0 $highlight-color, inset 0 3px 6px rgba(#000, .75);
+            background: $dark-grey;
+            background: linear-gradient(to bottom, rgba(68, 68, 68, 1) 0%, rgba(34, 34, 34, 1) 100%);
+            color: $light-grey;
+            transition: height $timing $ease;
+    
+            &:not(:last-of-type) {
+                box-shadow: inset 0 -2px 2px rgba(#000, .25), inset 4px 0 0 0 $highlight-color, inset 0 3px 6px rgba(#000, .75);
+            }
+    
+            .accordion__header {
+                padding: 1em 0;
+            }
+    
+            .accordion__body {
+                font-size: .825em;
+                line-height: 1.4em;
+            }
+    
+        }
+    
+    }
+    input[name='panel']:checked~.accordion__content.accordion__content--small {
+        height: 150px;
+    }
+    
+    input[name='panel']:checked~.accordion__content.accordion__content--med {
+        height: 200px;
+    }
+    
+    input[name='panel']:checked~.accordion__content.accordion__content--large {
+        height: 300px;
+    }
+}
